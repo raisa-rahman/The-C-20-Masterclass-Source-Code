@@ -10,7 +10,6 @@ module;
 export module practical_coro_02;
 
 namespace practical_coro_02{
-
     /*
     std::generator<int> fibonacci(int max) {
         int a = 0, b = 1;
@@ -22,6 +21,5 @@ namespace practical_coro_02{
         }
     }
     */
-
 
 }   //namespace practical_coro_02.

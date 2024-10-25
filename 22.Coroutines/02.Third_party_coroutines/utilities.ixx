@@ -9,14 +9,10 @@ export module utilities;
 import practical_coro_01;
 import practical_coro_02;
 
-export void print_msg(std::string_view msg) {
-	fmt::println("{}",msg);
-}
-
 export void practical_coro_01_demo(){
 	for (auto i : practical_coro_01::fibonacci())
 	{
-		if (i > 1'000'000) break;
+		if (i > 10) break;
 		std::cout << i << std::endl;
 	}
 }
