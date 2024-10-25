@@ -4,7 +4,7 @@
             . Coroutine workflow
             . Coroutine keywords
             . Coroutine infrastructure
-            
+
         .#1: co_await: 
             . see coro_basics_01.ixx
 
@@ -17,8 +17,6 @@
         .#4: custom generator
             . see coro_basics_04.ixx 
             
-        .#5: third party coroutines
-            . see coro_basics_05.ixx 
     . Build instructions: 
         . Bare hands with CMake: 
             . cmake -S . -B build

@@ -26,16 +26,16 @@ namespace coro_basics_03{
                 return {};
             }
 
+            /*
             void return_value(int val){
                 fmt::println("Returning value");
                 m_value = val;
             }
+            */
 
-            /*
             void return_void() {
                 fmt::println("Returning void...");
             }
-            */
         };
 
         CoroType(promise_type* p)

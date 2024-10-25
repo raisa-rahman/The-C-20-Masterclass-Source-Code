@@ -29,7 +29,7 @@ namespace coro_basics_04{
             }
 
             void return_void() {
-                fmt::println("Returning void...");
+                //fmt::println("Returning void...");
             }
         };
 
@@ -76,6 +76,7 @@ namespace coro_basics_04{
         while (first != last) {
             co_yield first++;
         }
+        co_return;
     }
 
 }   //namespace coro_basics_04

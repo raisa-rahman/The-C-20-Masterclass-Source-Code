@@ -14,6 +14,8 @@ export void print_msg(std::string_view msg) {
 	fmt::println("{}",msg);
 }
 
+
+//#1: co_await:
 export void coro_basics_01_demo(){
 
 	auto task = coro_basics_01::do_work();
@@ -40,6 +42,7 @@ export void coro_basics_01_demo(){
 }
 
 
+//#2: co_yield:
 export void coro_basics_02_demo(){
 
 	auto task = coro_basics_02::do_work();
@@ -64,12 +67,14 @@ export void coro_basics_02_demo(){
     fmt::println("Done!");
 }
 
+//#3: co_return:
 export void coro_basics_03_demo(){
 
 	auto task = coro_basics_03::do_work();
 
     task.m_handle(); // This resumes the coroutine. When next suspension point is hit it pauses
     fmt::println("value: {}", task.m_handle.promise().m_value);
+    fmt::println("coro done: {}", task.m_handle.done());
 
     fmt::println("");
     task.m_handle(); // This resumes the coroutine. When next suspension point is hit it pauses
@@ -83,7 +88,7 @@ export void coro_basics_03_demo(){
 
     fmt::println("");
     task.m_handle();
-    fmt::println("value: {}", task.m_handle.promise().m_value);
+    fmt::println("value: {}", task.m_handle.promise().m_value); // We should not be able to get the value here. May get junk.
     fmt::println("coro done: {}", task.m_handle.done());
 
     fmt::println("Done!");
@@ -119,7 +124,7 @@ export void coro_basics_04_demo(){
 
     // Range 
     auto task3 = coro_basics_04::range(0, 25);
-    for (size_t i{}; i < 26; ++i) {
+    for (size_t i{}; i < 25; ++i) {
         fmt::println("value[{}]: {}", i, task3());
     }
 
