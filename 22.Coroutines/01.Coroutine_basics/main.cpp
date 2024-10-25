@@ -1,5 +1,10 @@
 /*
     . Couroutine basics: 
+        .#0: Basic theory: 
+            . Coroutine workflow
+            . Coroutine keywords
+            . Coroutine infrastructure
+            
         .#1: co_await: 
             . see coro_basics_01.ixx
 

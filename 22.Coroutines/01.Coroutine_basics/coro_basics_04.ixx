@@ -1,3 +1,6 @@
+/*
+        .#4: custom generator
+*/
 module;
 
 #include <coroutine>
