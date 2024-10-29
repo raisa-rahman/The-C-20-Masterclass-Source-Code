@@ -1,0 +1,32 @@
+/*
+    . GUI Challenge: SFML
+        . Using const and constexpr: 
+            . Establishing good practices.
+        . Handling keyboard input: 
+            . Closing the window with the escape key
+            . Changing the color of the circle with the A and B keys
+                . A -> Blue
+                . B -> Yellow
+    . NOTE: 
+        . This example won't work in containers because they don't have a xserver
+            set up. It's possible to set up one but we'll pass for this course.
+        . You can run it: 
+            . On a local box with the requirements met: 
+                . a compiler with support for modules with cmake:   
+                    . gcc 14 and up
+                    . clang 16 and up
+                    . latest visual c++
+        . Be carefult about the opengl dependencies that vcpkg will complain about in the output .
+			.Install them: apt-get install libx11-dev libxrandr-dev libxcursor-dev libxi-dev libudev-dev 
+        . Note that even if we don't have access to xserver we can still build the 
+            binary successfuly. We simply can't run it and see a GUI.
+        . In this course, we will run it on windows 
+
+*/
+import utilities;
+
+int main()
+{
+  app();
+  return 0;
+}
