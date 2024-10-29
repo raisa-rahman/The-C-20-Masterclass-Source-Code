@@ -33,8 +33,6 @@ import utilities;
 
 int main()
 {
-  print_msg("starting out...");
   app();
-
   return 0;
 }
