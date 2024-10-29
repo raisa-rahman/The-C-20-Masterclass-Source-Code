@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 
 // Tools
@@ -15,26 +16,26 @@ int main(){
     int tool {Eraser};
 
     if (tool == Pen) {
-        std::cout << "Active tool is pen" << std::endl;
+        cout << "Active tool is pen" << endl;
         //Do the actual painting
     }
     else if (tool == Marker) {
-        std::cout << "Active tool is Marker" << std::endl;
+        cout << "Active tool is Marker" << endl;
     }
     else if (tool == Eraser) {
-        std::cout << "Active tool is Eraser" << std::endl;
+        cout << "Active tool is Eraser" << endl;
     }
     else if (tool == Rectangle) {
-        std::cout << "Active tool is Rectangle" << std::endl;
+        cout << "Active tool is Rectangle" << endl;
     }
     else if (tool == Circle) {
-        std::cout << "Active tool is Circle" << std::endl;
+        cout << "Active tool is Circle" << endl;
     }
     else if (tool == Ellipse) {
-        std::cout << "Active tool is Ellipse" << std::endl;
+        cout << "Active tool is Ellipse" << endl;
     }
 
-    std::cout << "Moving on" << std::endl;
+    cout << "Moving on" << endl;
     
     return 0;
 }
