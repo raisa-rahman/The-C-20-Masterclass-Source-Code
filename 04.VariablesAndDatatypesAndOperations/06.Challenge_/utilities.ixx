@@ -2,10 +2,7 @@ module;
 #include <string_view>
 #include <SFML/Graphics.hpp>
 
-//Global module fragment : #include , preprocessor directives
-export module utilities; // Name doesn't have to match the .ixx file
-
-//Module purview
+export module utilities; 
 
 export void app(){
 
