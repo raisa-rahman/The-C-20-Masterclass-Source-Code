@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+using namespace std; 
 
 
 // Tools
@@ -18,12 +19,12 @@ int main(){
     switch (tool)
     {
         case Pen : {
-             std::cout << "Active tool is Pen" << std::endl;
+             cout << "Active tool is Pen" << endl;
         }
         break;
 
         case Marker : {
-             std::cout << "Active tool is Marker" << std::endl;
+             cout << "Active tool is Marker" << endl;
         }
         break;
 
@@ -31,36 +32,32 @@ int main(){
         case Eraser :
         case Rectangle : 
         case Circle : {
-             std::cout << "Drawing Shapes" << std::endl;
+             cout << "Drawing Shapes" << endl;
         }
         break;
 
         case Ellipse : {
-             std::cout << "Active tool is Ellipse" << std::endl;
+             cout << "Active tool is Ellipse" << endl;
         }
         break;
     
         default: {
-            std::cout << "No match found" << std::endl;
+            cout << "No match found" << endl;
         }
             break;
     }
 
-    std::cout << "Moving on" << std::endl;
+    cout << "Moving on" << endl;
 
 
     /*
     // Condition can only be integer of enum (We'll learn about enums later in the course)
-    std::string name {"John"};
+    string name {"John"};
     switch (name) // Compiler error!
     {
     
     }
     */
-
-
-
-
-   
+    
     return 0;
 }
